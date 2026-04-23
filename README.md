@@ -1,7 +1,7 @@
 # 🔍 Visual Search Engine
 
 🚀 **Live Demo (Google Colab):**
-👉 https://colab.research.google.com/drive/1A82z96Wik7EGcFw5kCwMtAJ41w8EQkZH?usp=sharing
+👉 https://colab.research.google.com/drive/1QCLAEF38nqEe7cdpZuX8OVcOsuYLlwjA?usp=sharing
 
 ---
 
@@ -124,15 +124,19 @@ faiss.normalize_L2(embeddings)
 
 ## 💡 Additional Insight
 
-* Embedding size: **2048** *(fix this if you actually meant 2048 instead of 2098 — ResNet50 default is 2048)*
+- Embedding size: **2048**
+- Each embedding is stored as a float32 vector → 4 bytes per dimension
+- Memory per image ≈ 2048 × 4 = **8 KB**
 
+📦 Storage in FAISS:
+- Total storage grows linearly with dataset size
+- Example:
+  - 1K images → ~8 MB
+  - 10K images → ~80 MB
+  - 100K images → ~800 MB
 ---
 
-## 🧪 Testing Examples
 
-> Add your test queries and outputs here
-
----
 
 ## 🚀 Future Improvements
 
