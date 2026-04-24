@@ -1,7 +1,10 @@
+
 # 🔍 Visual Search Engine
 
 🚀 **Live Demo (Google Colab):**
 👉 https://colab.research.google.com/drive/1QCLAEF38nqEe7cdpZuX8OVcOsuYLlwjA?usp=sharing
+
+
 
 ---
 
@@ -15,12 +18,11 @@ Instead of relying on text-based search, the system understands **image content*
 
 ## 🖼️ Demo & Results
 
-> Add your output screenshots / result images here
 
-```
-![Demo Image 1](path/to/image1.png)
-![Demo Image 2](path/to/image2.png)
-```
+<img width="1052" height="539" alt="Screenshot 2026-04-23 024544" src="https://github.com/user-attachments/assets/a7b44047-fc82-4c06-95e5-00061a9227da" />
+<img width="1052" height="539" alt="Screenshot 2026-04-23 032005" src="https://github.com/user-attachments/assets/a8b9ce20-0343-4109-b5a1-897daa6ec7ad" />
+<img width="1052" height="539" alt="Screenshot 2026-04-23 030008" src="https://github.com/user-attachments/assets/1579deb1-a8a4-4833-ab03-86061e0c0010" />
+
 
 ---
 
@@ -69,12 +71,6 @@ User Input Image
 The query image goes through the same preprocessing and embedding steps.
 FAISS compares this query embedding with stored dataset embeddings using cosine similarity.
 The system returns the **Top-K most similar images**.
-
----
-
-### 🔑 Key Idea
-
-> Same embedding space + fast similarity search = efficient visual retrieval
 
 ---
 
